@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+a{
+	text-decoration: none;
+	font-family:"Ubuntu", serif; 
+}
+h3{
+	font-family: "Ubuntu", serif; 
+}
+h1{
+	font-family: "Poppins", serif;
+}
+.main-wrap{
+	width: 100%;
+	display: flex;
+}
+.main-wrap .main-head{
+	width: 20%;
+	height: 100vh;
+	background: #0a1128;
+	overflow: hidden;
+	transition: .3s ease-in-out;
+}
+.main-wrap .main-head .main-nav{
+	width: 100%;
+}
+.main-wrap .main-head .main-nav .navbar{
+	width: 100%;
+}
+.main-wrap .main-head .main-nav .navbar .navbar-nav .title{
+	padding: 15px 19px;
+	border-bottom: 1px solid #2f3e46;
+}
+.main-wrap .main-head .main-nav .navbar .navbar-nav .title h3{
+	font-size: 25px;
+	font-weight: 500;
+	line-height: 35px;
+	color: #fff;
+	position: relative;
+}
+.main-wrap .main-head .main-nav .navbar .navbar-nav .title h3 .title-text{
+	position: absolute;
+	left: 35px;
+	opacity: 1;
+	transition: .2s ease;
+
+}
+.main-wrap .main-head .main-nav .navbar .navbar-nav .nav-list{
+	margin: 0;
+	padding: 10px 10px;
+}
+.main-wrap .main-head .main-nav .navbar .navbar-nav .nav-list .nav-list-item{
+	padding: 15px 10px;
+	list-style: none;
+	border-radius: 5px;
+	margin-bottom: 15px;
+	cursor: pointer;
+	transition: .2s ease-in-out;
+}
+.main-wrap .main-head .main-nav .navbar .navbar-nav .nav-list .nav-list-item:hover{
+	background: #2f3e46;
+}
+.main-wrap .main-head .main-nav .navbar .navbar-nav .nav-list .nav-list-item .nav-link{
+	display: inline-block;
+	font-size: 15px;
+	font-weight: 500;
+	letter-spacing: .5px;
+	color: #fff;
+}
+.root{
+	--text-color: #edf3ff;
+	--subheading-color: #97a7ca;
+	--placeholder-color: #c3cdde;
+	--primary-color: #101623;
+	--secondary-color: #283045;
+	--secondary-hover-color: #333e58;
+	--scrollbar-color: #626a7f;
+}
+
+.showcase{
+	width: 90%;
+	color: #edf3ff;
+	background: #101623;
+}
+.container{
+	padding: 10px 0 50px;
+	display: flex;
+	position: relative;
+	left: 15px;
+	font-family: "Poppins", serif;
+}
+.container :where(.app-header, .suggestions, .message-bot-message .prompt-wrapper, .disclaimer-text){
+	margin: 0 auto;
+	width: 100%;
+	padding: 0 20px;
+	max-width: 980px;
+}
+.container .app-header{
+	margin-top: 4vh;
+}
+.app-header .heading{
+	font-size: 3rem;
+	width: fit-content;
+	background: linear-gradient(to right, #1d7efd, #8f6fff);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.app-header .sub-heading{
+	font-size: 2.6rem;
+	margin-top: -5px;
+	color: #97a7ca;
+}
+.suggestions{
+	display: flex;
+	position: relative;
+	left: 50px;
+	gap: 15px;
+	margin-top: 7.5vh;
+	list-style: none;
+	overflow-x: auto;
+	scrollbar-width: none;
+}
+.suggestions .suggestions-item{
+	width: 228px;
+	padding: 18px;
+	flex-shrink: 0;
+	border-radius: 12px;
+	background: #283045;
+}
+.suggestions .suggestions-item span{
+	height: 45px;
+	width: 45px;
+	margin-top: 35px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	color: #1d7efd;
+	background: #101623;
+}
+.suggestions .suggestions-item i{
+	height: 45px;
+	width: 45px;
+	margin-top: 35px;
+	display: flex;
+	align-self: flex-end;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	color: #1d7efd;
+	background: #101623;
+}
+.suggestions .suggestions-item:hover{
+	background: #333e58;
+	transition: 0.3s ease;
+
+
+}
+.suggestions .suggestions-item:nth-child(2) span{
+	color: #28a745;
+}
+.suggestions .suggestions-item:nth-child(3) i{
+	color: #ffc107;
+}
+.suggestions .suggestions-item:nth-child(4) i{
+	color: #6f42c1;
+}
+
+.prompt-container{
+	position: fixed;
+	bottom: 0;
+	left: 350px;
+	width: 25%;
+	padding: 16px 0;
+	background: #101623;
+}
+.prompt-container :where(.prompt-wrapper, .prompt-form, .prompt-actions){
+	display: flex;
+	gap: 12px;
+	height: 56px;
+	align-items: center;
+}
+.prompt-wrapper .prompt-form{
+	width: 100%;
+	height: 100%;
+	border-radius: 130px;
+	background: #283045 ;
+}
+.prompt-form .prompt-input{
+	height: 100%;
+	width: 100%;
+	background: none;
+	outline: none;
+	border: none;
+	font-size: 1rem;
+	padding-left: 24px;
+	color: #edf3ff;
+}
+.prompt-container{
+	width: 50%;
+	height: 20%;
+}
+.disclaimer-text{
+	display: flex;
+	position: relative;
+	left: 150px;
+	text-align: center;
+	font-size: 0.9rem;
+	padding: 16px 20px 0;
+	color: #c3cdde;
+}
+.prompt-form .prompt-input::placeholder{
+	color: #c3cdde;
+}
+.prompt-wrapper button{
+	width: 46px;
+	height: 80%;
+	color: #c3cdde;
+	border: none;
+	cursor: pointer;
+	border-radius: 60%;
+	font-size: 1.4rem;
+	flex-shrink: 0;
+    background: #283045;
+	transition: 0.3 ease;
+}
+.prompt-wrapper button:hover {
+	background: #333e58;
+}
+#send-file-btn{
+	color: #fff;
+	display: none;
+	background: #1d7efd;
+}
+.prompt-form .prompt-actions button{
+	height: 45px;
+	width: 45px;
+}
+.chats-container .message-bot-message{
+	display: flex;
+	gap: 11px;
+	align-items: center;
+	
+}
+.chats-container .message-bot-message .message-text{
+	padding: 3px 16px;
+	word-wrap: break-word;
+	white-space: pre-line;
+}
+.chats-container {
+    display: flex; 
+    justify-content: flex-end; 
+    margin-bottom: 10px;
+    width: 100%;
+	position: relative;
+	left: 10%;
+	gap: 20px;
+	flex-direction: column;
+
+	 
+}
+
+
+.message-user-message, 
+.message-bot-message {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    max-width: 75%;
+}
+
+.message-user-message {
+    justify-content: flex-end; 
+}
+
+.message-bot-message {
+    justify-content: flex-start; 
+}
+
+.avatar {
+    height: 55px;  
+    width: 55px;  
+    border-radius: 50%;
+    object-fit: cover;  
+    background: #283045;
+    border: 1px solid #333e58;
+}
+
+
+.message-text {
+    padding: 12px 16px;
+    border-radius: 13px;
+    background: #283045;
+    color: white;
+}
+
+
+
+
+
+.message-text{
+	padding: 12px 16px;
+	max-width: 75%;
+	border-radius: 13px 13px 3px 13px;
+	background: #283045
+}
+.container :where(.app-header, .suggestions){
+	display: none;
+}
+
+
+.prompt-actions{
+	gap: 5px;
+	margin-right: 7px;
+	
+}
+
+
+#send-file-btn:hover{
+background: #0264e3;
+}
+.prompt-form .prompt-input:valid ~ .prompt-actions #send-file-btn{
+	display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

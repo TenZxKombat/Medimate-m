@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Side Navigation Menu</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=draw" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=lightbulb" />
+    
+  </head>
+<body>
+    <main class="main-wrap">
+      <header class="main-head">
+        <div class="main-nav">
+            <nav class="navbar">
+              <div class="navbar-nav">
+                <div class="title">
+                  <h3>
+                    <i class="fa-solid fa-virus"></i>
+                    <span class="title-text">Medimate</span>
+                  </h3>
+                </div>
+                <ul class="nav-list">
+                  <li class="nav-list-item">
+                    <a href="#" class="nav-link">
+                      <i class="fa-solid fa-house-chimney"></i>
+                     <span class="link-test">Home</span>
+                    </a>
+                  <li class="nav-list-item">
+                    <a href="#" class="nav-link">
+                      <i class="fa-solid fa-notes-medical"></i>
+                      <span class="link-test">Prescriptions</span>
+                    </a>
+                  </li>
+                  <li class="nav-list-item">
+                     <a href="#" class="nav-link">
+                      <i class="fa-solid fa-user"></i>
+                      <span class="link-test">Profile</span>
+                     </a>
+                  </li>
+                  <li class="nav-list-item">
+                     <a href="#" class="nav-link">
+                      <i class="fa-regular fa-newspaper"></i>
+                      <span class="link-test">Med News</span>
+                     </a>
+                  </li>
+                  <li class="nav-list-item">
+                     <a href="#" class="nav-link">
+                      <i class="fa-solid fa-clipboard"></i>
+                      
+                      <span class="link-test">Overview</span>
+                     </a>
+                  </li>
+                  <li class="nav-list-item">
+                      <a href="#" class="nav-link">
+                        <i class="fa-solid fa-camera"></i>
+                        <span class="link-test">Photo Analysis</span>
+                      </a>
+                  </li>
+                  <li class="nav-list-item">
+                    <a href="#" class="nav-link">
+                      <i class="fa-solid fa-circle-info"></i>
+                      <span class="link-test">About Us</span>
+                    </a>
+                </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </header>
+      <section class="showcase">
+       <div class="overlays">
+         <div class="head">
+      </div>
+      <div class="container">
+        <div class="sub-container">
+        <header class="app-header">
+            <h1 class="heading">Hello, There</h1>
+            <br>
+            <h3 class="sub-heading">How can I help You?</h3>
+        </header>
+        <br>
+
+
+        <ul class="suggestions">
+          <li class="suggestions-item">
+            <p class="text">Give me the details of trending contagious diseases. we should do our job </p> 
+            <br>
+            <span class="material-symbols-outlined">
+              draw
+              </span>
+          </li>
+          <li class="suggestions-item">
+            <p class="text">Give me the details of trending contagious diseases. we should do our job </p> 
+            <br>
+            <span class="material-symbols-outlined">
+              lightbulb
+              </span>
+          </li>
+          <li class="suggestions-item">
+            <p class="text">Give me the details of trending contagious diseases. we should do our job </p> 
+            <br>
+            <i class="fa-solid fa-star-of-life"></i>
+          </li>
+          <li class="suggestions-item">
+            <p class="text">Give me the details of trending contagious diseases. we should do our job </p> 
+            <br>
+            <i class="fa-brands fa-wpexplorer"></i>
+          </li>
+        </ul>
+
+        <div class="chats-container">
+          <div class="message-user-message">
+            <p class="message-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis, dolores?</p>
+          </div>
+       
+        
+          <div class="message-bot-message">
+            <img src="robo1.svg.svg" class="avatar">
+            <p class="message-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis, dolores?</p>
+
+          </div>
+        </div>
+       
+
+        <div class="prompt-container">
+          <div class="prompt-wrapper">
+            <form action="#" class=" prompt-form">
+              <input type="text" placeholder="Ask Medimate" class="prompt-input" required>
+              <div class="prompt-actions">
+                <button id="add-file-btn" type="button"> 
+                  <i class="fa-solid fa-paperclip"></i>
+                </button>
+                  <button id="send-file-btn" type="button"> 
+                    <i class="fa-solid fa-arrow-up"></i>
+                  </button>
+              </div>
+            </form>
+            <button id="add-file-btn" type="button"> 
+              <i class="fa-regular fa-sun"></i>
+            </button>
+            <button id="add-file-btn" type="button"> 
+              <i class="fa-solid fa-trash"></i>
+            </button>
+            <br>
+            <br><br>
+            <br>
+           
+           
+          </div>
+          <br>
+          <p class="disclaimer-text">Medimate can make mistakes, so double check-it.
+          </p>
+        </div>
+        </div>
+       </div>
+      </section>
+    </main>
+    
+    <script src = "script.js"></script>
+</body>
+</html>
